@@ -1,0 +1,41 @@
+{{ define "main" }}
+  <section class="py-5 my-5">
+    {{ if not (eq (len $.Data.Terms) 0) }}
+      {{ range .Data.Terms.Alphabetical }}
+        <details class="group">
+          <summary
+            class="flex items-center font-medium cursor-pointer list-none border rounded my-2 p-2"
+          >
+            <span class="grow"> {{ .Page.Title }} </span>
+            <span class="mr-2">{{ .Count }}</span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                fill="none"
+                height="24"
+                shape-rendering="geometricPrecision"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          {{ range .Pages }}
+            <p class="text-neutral-600 mt-1 p-2 group-open:animate-fadeIn">
+              <i class="fa-light fa-pen fa-xs"></i>
+              <a href="{{ .RelPermalink }}"
+                >{{ .Title }}
+                {{ if .Params.subheadline }}({{ .Params.subheadline }}){{ end }}
+                - <small>{{ .PublishDate.Format "Jan 02, 2006" }}</small></a
+              >
+            </p>
+          {{ end }}
+        </details>
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}

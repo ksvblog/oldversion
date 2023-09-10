@@ -1,0 +1,39 @@
+{{ define "main" }}
+  <section class="py-5 my-5">
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+      {{ range $name, $value := $taxonomy }}
+        <details class="group">
+          <summary
+            class="flex items-center font-medium cursor-pointer list-none border dark:border-black rounded my-2 p-2"
+          >
+            <span class="grow"> {{ $name }} </span>
+            <span class="transition group-open:rotate-180">
+              <svg
+                fill="none"
+                height="24"
+                shape-rendering="geometricPrecision"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                width="24"
+              >
+                <path d="M6 9l6 6 6-6"></path>
+              </svg>
+            </span>
+          </summary>
+          {{ range $value.Pages }}
+            <p
+              class="text-neutral-600 mt-1 p-2 group-open:animate-fadeIn"
+              hugo-nav="{{ .RelPermalink }}"
+            >
+              <i class="fa-light fa-pen fa-xs"></i>
+              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            </p>
+          {{ end }}
+        </details>
+      {{ end }}
+    {{ end }}
+  </section>
+{{ end }}

@@ -1,0 +1,15 @@
+<script>
+    window.store = {
+        // get section blog data
+        {{ range where .Site.Pages "Section" "posts" }}
+        // Permalink as an identifier
+        "{{ .Permalink }}": {
+            // write all data we need to be displayed in the search list
+            "title": "{{ .Title  }}",
+            "content": {{ .Content | plainify }}, // Strip out HTML tags
+            "url": "{{ .Permalink }}"
+            "tags": [{{ range .Params.Tags }}"{{ . }}",{{ end }}],
+        },
+        {{ end }}
+    }
+</script>

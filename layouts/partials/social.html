@@ -1,0 +1,12 @@
+<div id="socials">
+  {{ range $.Page.Site.Params.social -}}
+    <a
+      href="{{ .url | safeURL }}"
+      target="_blank"
+      rel="noopener me"
+      title="{{ .name | humanize }}"
+      style="margin-left:0.5em"
+      >{{ partial "svg-large.html" . }}</a
+    >
+  {{- end -}}
+</div>

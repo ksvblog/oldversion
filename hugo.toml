@@ -1,0 +1,105 @@
+baseURL = "https://h2kyaw.github.io/"
+title = "K's V/Blog"
+paginate = 6
+languageCode = 'en-us'
+summarylength = 10
+enableEmoji = true
+hasCJKLanguage = true 
+# enableGitInfo = true
+enableInlineShortcodes = true
+timeout = 20
+
+googleAnalytics = "UA-138756551-3"
+disqusShortName = "heinhtetkyaw"
+enableRobotsTXT = true
+canonifyURLs = true
+
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+    
+[taxonomies]
+    author = "authors"
+    tag = "tags"
+    category = "categories"
+    series = "series"
+
+[menu]
+    [[menu.main]]
+        weight = 1
+        name = 'About'
+        pageRef = '/about'
+        Url = '/about'
+        Pre = 'fa-light fa-id-badge'
+    [[menu.main]]
+        weight = 2
+        name = 'Archive'
+        pageRef = '/archive'
+        Url = '/archive'
+        Pre = 'fa-light fa-cabinet-filing'
+    [[menu.main]]
+        weight = 3
+        name = 'Books'
+        pageRef = '/books'
+        Url = '/books'
+        Pre = 'fa-light fa-books'
+    [[menu.main]]
+        weight = 4
+        name = 'Posts'
+        pageRef = '/posts'
+        Url = '/posts'
+        Pre = 'fa-light fa-blog'
+    [[menu.main]]
+        weight = 5
+        name = 'Search'
+        pageRef = '/search'
+        Url = '/search'
+        Pre = 'fa-light fa-magnifying-glass'
+
+[params.license]
+    name = "CC BY-NC-ND 4.0"
+    nameLong = "Attribution-NonCommercial-NoDerivatives 4.0 International"
+    copyrightFirstYear = 2012
+
+[params]
+    cyear = '© 2012'
+    copyrightYearToken = "<YYYY>"
+
+    # Social Icons
+    [[params.social]]
+    name = "github"
+    url = "https://github.com/"
+
+    [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/"
+
+    [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/"
+
+[outputs]
+    home = ['html', 'rss', 'json']
+    page = ['html']
+    rss = ['rss']
+    section = ["JSON", "HTML", "RSS"]
+    taxonomy = ['html', 'rss']
+    term = ['html', 'rss']
+
+[markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    tabWidth = 4
+    noClasses = false
+
+[frontmatter]
+    date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
+    expiryDate = ['expirydate', 'unpublishdate']
+    lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+    publishDate = ['publishdate', 'pubdate', 'published', 'date']
+
+[security]
+    [security.exec]
+        osEnv = '(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|HOME|SSH_AUTH_SOCK)$'
