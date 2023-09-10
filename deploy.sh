@@ -1,6 +1,9 @@
 #!/bin/bash
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+# Pull changes to source
+git pull origin main
+
 # Add changes to git.
 git add .
 
