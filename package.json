@@ -14,7 +14,6 @@
     "toml": "^3.0.0"
   },
   "dependencies": {
-    "flowbite": "^1.8.1",
     "lunr": "^2.3.9"
   },
   "name": "h2k",
