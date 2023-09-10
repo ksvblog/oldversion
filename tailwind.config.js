@@ -99,5 +99,4 @@ module.exports = {
       xl: '1440px',
     },
   },
-  plugins: [require('flowbite/plugin')],
 };
