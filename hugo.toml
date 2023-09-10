@@ -81,7 +81,7 @@ canonifyURLs = true
     home = ['html', 'rss', 'json']
     page = ['html']
     rss = ['rss']
-    section = ["JSON", "HTML", "RSS"]
+    section = ["HTML", "RSS"]
     taxonomy = ['html', 'rss']
     term = ['html', 'rss']
 
