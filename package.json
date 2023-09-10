@@ -13,8 +13,13 @@
     "tom": "^0.4.1",
     "toml": "^3.0.0"
   },
+  "dependencies": {
+    "flowbite": "^1.8.1",
+    "lunr": "^2.3.9"
+  },
   "name": "h2k",
   "version": "1.0.0",
+  "main": "Gruntfile.js",
   "scripts": {
     "start": "concurrently npm:watch:*",
     "watch:tw": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css --watch",
