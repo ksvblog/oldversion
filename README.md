@@ -12,9 +12,9 @@
 </p>
 
 [![Deploy Hugo site to Pages](https://github.com/h2kyaw/site/actions/workflows/hugo.yaml/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/hugo.yaml)
-[![CodeQL](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/github-code-scanning/codeql)
+[![CodeQL](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/codeql.yml)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=h2kyaw.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=h2kyaw.github.io)
-[![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat)](https://www.paypal.com/paypalme/h2kyaw)
+[![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://www.paypal.com/paypalme/h2kyaw)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io?ref=badge_shield)
 
@@ -23,12 +23,15 @@
 Hello and welcome to my personal website! I'm thrilled to have you here and share a glimpse into my world. I believe that life is a journey of constant exploration and learning, and this website is a reflection of that philosophy.
 
 # About Me
+
 I'm Hein Htet Kyaw, a Contents Writer based in Yangon, Myanmar. With a deep passion for Technology, I've embarked on a journey to 1. I believe in the power of **Focus**, and I'm dedicated to making a positive impact in both my personal and professional spheres.
 
 # Blog
+
 Curiosity drives me, and the blog is where I delve deeper into my thoughts and insights. I explore topics like [Content](https://ksvblog.site/posts/) offering a unique perspective on [Personal Website is Up](https://h2kyaw.github.io/post/2023/removing-desktop-shortcut-arrow/). Whether you're seeking knowledge, inspiration, or just a good read, I invite you to join the conversation and explore these articles.
 
 # Connect
+
 I believe in the power of collaboration and connection. Let's embark on this journey together! Feel free to reach out to me via [@HeinHtetKyaw](//t.me/HeinHtetKyaw) Whether you want to discuss a potential project, share your thoughts, or just say hello, I'm all ears.
 
 Thank you for visiting my digital haven. As I continue to evolve and explore, this website will be a living chronicle of my experiences. Stay curious, stay inspired, and let's create something extraordinary together.
@@ -37,5 +40,25 @@ Warmly,
 
 Hein Htet Kyaw
 
+# Deploy Local
+
+```
+git clone git@github.com:h2kyaw/h2kyaw.github.io.git
+cd h2kyaw.github.io
+```
+
+install npm packages with
+
+```
+npm install
+```
+
+run hugo with cli
+
+```
+npm start
+```
+
 ## License
+
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io?ref=badge_large)
