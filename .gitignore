@@ -4,6 +4,7 @@
 themes/harbor
 themes/harbor
 desktop.ini
+.hugo_build.lock
 
 # Build directories
 public
