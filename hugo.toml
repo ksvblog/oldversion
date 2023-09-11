@@ -55,6 +55,9 @@ canonifyURLs = true
         Url = '/search'
         Pre = 'fa-light fa-magnifying-glass'
 
+[permalinks]
+	posts = "/post/:filename/"
+
 [params.license]
     name = "CC BY-NC-ND 4.0"
     nameLong = "Attribution-NonCommercial-NoDerivatives 4.0 International"
