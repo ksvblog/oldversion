@@ -4,7 +4,6 @@
       <a class="bubble" href="{{ "/series/" | relLangURL }}">
         <i class="fa fa-fw fa-list-alt"></i>
       </a>
-
       <article class="article">
         <div class="content">
           <h3>{{ i18n "series" | default "series" }}</h3>
@@ -14,14 +13,11 @@
               {{ $series_name := $name }}
               {{ $series_path := (printf "/series/%s" (urlize $name)) }}
               {{ $series_page := site.GetPage $series_path }}
-
               {{ if $series_page }}
                 {{ $series_name = $series_page.Title }}
               {{ end }}
               <li>
-                <a href="{{ $series_path | relLangURL }}"
-                  >{{ $series_name }} ({{ $taxonomy.Count }})</a
-                >
+                <a href="{{ $series_path | relLangURL }}">{{ $series_name }} ({{ $taxonomy.Count }})</a>
               </li>
             {{ end }}
           </ul>
