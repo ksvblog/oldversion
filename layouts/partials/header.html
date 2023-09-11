@@ -1,15 +1,8 @@
 <header class="border-gray-200 dark:bg-gray-900" id="site">
   <nav class="flex flex-wrap items-center justify-between py-0 md:py-4 lg:py-4">
-    <a href="{{ .Site.BaseURL }}"
-      ><img
-        src="{{ .Site.BaseURL }}logo.svg"
-        class="h-8 mr-3"
-        alt="{{ .Site.Title }}"
-    /></a>
+    <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.BaseURL }}logo.svg" class="h-8 mr-3" alt="{{ .Site.Title }}" /></a>
     <div class="" id="navbar">
-      <ul
-        class="font-medium flex flex-row p-4 md:p-0 md:space-x-8 md:bg-white md:dark:bg-gray-900 dark:border-gray-700"
-      >
+      <ul class="font-medium flex flex-row p-4 md:p-0 md:space-x-8 md:bg-white md:dark:bg-gray-900 dark:border-gray-700">
         {{ partial "nav.html" (dict "menuID" "main" "page" .) }}
       </ul>
     </div>
