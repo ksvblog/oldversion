@@ -11,7 +11,6 @@
   <img src="https://img.shields.io/badge/Apple-%23000000.svg?style=for-the-badge&logo=apple&logoColor=white">  
 </p>
 
-[![github pages](https://github.com/h2kyaw/site/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/gh-pages.yml)
 [![Deploy Hugo site to Pages](https://github.com/h2kyaw/site/actions/workflows/hugo.yaml/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/hugo.yaml)
 [![CodeQL](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/github-code-scanning/codeql)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=h2kyaw.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=h2kyaw.github.io)
