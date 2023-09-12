@@ -43,4 +43,4 @@
 </footer>
 {{ $styles := resources.Get "/js/site.js" | minify }}
 <script src="{{ $styles.RelPermalink }}"></script>
-<script src="{{ .Site.BaseURL }}fontawesome/js/all.js"></script>
+{{/*  <script src="{{ .Site.BaseURL }}fontawesome/js/all.js" defer></script>  */}}

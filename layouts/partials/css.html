@@ -1,9 +1,19 @@
+{{ $styles := resources.Get "/css/style.css" | postCSS | minify }}
 {{ if .Site.IsServer }}
-  {{ $seed := "weqklrjfmnk213409ufasdfhnlk3j4bladsfsl" }}
-  {{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}
-  {{ $style := resources.Get "main.css" | resources.PostCSS | resources.ExecuteAsTemplate (printf "main.dev.%s.css" $random) $random }}
-  <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+{{ else }}
+  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" />
+{{ end }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css" type="text/css" media="all" />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&amp;family=Fira+Sans:ital,wght@0,400;0,700;1,400&amp;family=Miriam+Libre:wght@400;700&amp;display=swap" rel="stylesheet" />
+{{/* {{ if .Site.IsServer }}
+{{ $seed := "weqklrjfmnk213409ufasdfhnlk3j4bladsfsl" }}
+{{ $random := delimit (shuffle (split (md5 $seed) "" )) "" }}
+{{ $style := resources.Get "main.css" | resources.PostCSS | resources.ExecuteAsTemplate (printf "main.dev.%s.css" $random) $random }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 {{ else }}
   {{ $style := resources.Get "main.css" | resources.PostCSS | resources.Minify }}
   <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 {{ end }}
+*/}}
