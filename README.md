@@ -13,7 +13,7 @@
 
 [![Deploy Hugo site to Pages](https://github.com/h2kyaw/site/actions/workflows/hugo.yaml/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/hugo.yaml)
 [![CodeQL](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/codeql.yml/badge.svg)](https://github.com/h2kyaw/h2kyaw.github.io/actions/workflows/codeql.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=h2kyaw.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=h2kyaw.github.io)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=h2kyaw_h2kyaw.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=h2kyaw_h2kyaw.github.io)
 [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://www.paypal.com/paypalme/h2kyaw)
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io?ref=badge_shield)
