@@ -7,7 +7,7 @@ enableEmoji = true
 hasCJKLanguage = true 
 # enableGitInfo = true
 enableInlineShortcodes = true
-timeout = 20
+# timeout = 20
 
 googleAnalytics = "UA-138756551-3"
 disqusShortName = "heinhtetkyaw"
@@ -106,3 +106,13 @@ canonifyURLs = true
 [security]
     [security.exec]
         osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|NPM_)$']
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
