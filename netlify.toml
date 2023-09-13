@@ -59,7 +59,7 @@
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
     X-Content-Type-Options = "nosniff"
-        Permissions-Policy = "accelerometer=(), camera=(), geolocation=(self 'https://ksvblog.site'), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()"
+    Permissions-Policy = "accelerometer=(), camera=(), fullscreen=(self 'https://ksvblog.site'), geolocation=*, gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=(), interest-cohort=()"
     #  Multi-value headers are expressed with multi-line strings
 	cache-control = '''
 	max-age=0,
