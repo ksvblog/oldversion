@@ -2,17 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@layer base {
-  code,
-  kbd,
-  samp,
-  pre {
-    @apply whitespace-normal;
-  }
-  p > img {
-    @apply mx-auto my-5;
-  }
-}
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -26,4 +15,8 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+.icon {
+  height: 1em;
+  width: 1em;
 }

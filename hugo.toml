@@ -68,17 +68,27 @@ canonifyURLs = true
     copyrightYearToken = "<YYYY>"
 
     # Social Icons
-    [[params.social]]
-    name = "github"
-    url = "https://github.com/"
+    # [[params.social]]
+    # name = "github"
+    # url = "https://github.com/"
 
-    [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/"
+    # [[params.social]]
+    # name = "twitter"
+    # url = "https://twitter.com/"
 
-    [[params.social]]
-    name = "linkedin"
-    url = "https://www.linkedin.com/"
+    # [[params.social]]
+    # name = "linkedin"
+    # url = "https://www.linkedin.com/"
+    [params.social]
+        github = "h2kyaw"
+        facebook = "CallMeHeinHtetKyaw"
+        facebook_admin = "100008954538831"  # This needs to be a page admin to get domain insights
+        twitter = "HeinHtetKyaw_"
+        twitter_domain = "h2kyaw.github.io" # This domain shows in twitter cards as "View on `twitter_domain`"
+        pinterest = "h2kyaw"
+        instagram = "__heinhtetkyaw__"
+        youtube = "@heinhtetkyaw279"
+        linkedin = "h2kyaw"
 
 [outputs]
     home = ['html', 'rss', 'json']
@@ -88,14 +98,30 @@ canonifyURLs = true
     taxonomy = ['html', 'rss']
     term = ['html', 'rss']
 
-[markup.highlight]
+# [markup.highlight]
+#     codeFences = true
+#     guessSyntax = true
+#     lineNoStart = 1
+#     lineNos = true
+#     lineNumbersInTable = false
+#     tabWidth = 4
+#     noClasses = false
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
     codeFences = true
-    guessSyntax = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
     lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = false
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'average'
     tabWidth = 4
-    noClasses = false
 
 [frontmatter]
     date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']

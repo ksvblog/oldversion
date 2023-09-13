@@ -1,6 +1,6 @@
-{{ $svg := . }}
-{{ $class := print $svg "-icon" }}
-{{ $match := "<svg (.*)?>(.*)</svg>" }}
+{{- $args := dict "icon" . -}}
+{{- if reflect.IsMap . -}}
+  {{- $args = . -}}
+{{- end -}}
 
-{{ $replaceWith := printf `<svg class="%s" ${1}>${2}</svg>` $class }}
-{{ return (replaceRE $match $replaceWith (printf "/assets/svg/%s.svg" $svg | readFile) | safeHTML) }}
+{{- return partialCached "_svg" $args $args.icon $args -}}
