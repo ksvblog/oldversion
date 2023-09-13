@@ -1,11 +1,11 @@
-baseURL = "https://h2kyaw.github.io/"
+baseURL = "https://ksvblog.site/"
 title = "K's V/Blog"
 paginate = 6
 languageCode = 'en-us'
 summarylength = 10
 enableEmoji = true
 hasCJKLanguage = true 
-# enableGitInfo = true
+enableGitInfo = true
 enableInlineShortcodes = true
 # timeout = 20
 
@@ -132,13 +132,3 @@ canonifyURLs = true
 [security]
     [security.exec]
         osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|NPM_)$']
-
-[[headers]]
-  for = "/css/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000"
-
-[[headers]]
-  for = "/js/*"
-  [headers.values]
-    Cache-Control = "public, max-age=31536000"
