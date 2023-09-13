@@ -2,7 +2,7 @@
 <meta itemprop="name" content="{{ .Title }}" />
 <meta itemprop="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}{{ end }}" />
 <!-- Output images -->
-{{ with .Params.images }}{{ range first 6 . }}<meta itemprop="image" content="{{ . }}" />{{ end }}{{ end }}
+{{/*  {{ with .Params.images }}{{ range first 6 . }}<meta itemprop="image" content="{{ .RelPermalink | absURL }}" />{{ end }}{{ end }}  */}}
 <!-- Output all taxonomies as schema.org keywords -->
 <meta itemprop="keywords" content="{{ range $plural, $terms := .Site.Taxonomies }}{{ range $term, $val := $terms }}{{ printf "%s," $term }}{{ end }}{{ end }}" />
 {{ if .IsPage }}<meta itemprop="wordCount" content="{{ .WordCount }}" />{{ end }}

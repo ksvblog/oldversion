@@ -17,7 +17,9 @@ pygmentsUseClasses = true
 [params]
 copyrightYearToken = "<YYYY>"
 cyear = '© 2012'
+images = ["/images/og.jpg"]
 mathJaxInitialize = "{ \"chtml\": { \"displayAlign\": \"left\" } }"
+ogimage = "/images/og.jpg"
 [params.social]
 facebook = "CallMeHeinHtetKyaw" 
 facebook_admin = "100008954538831" # This needs to be a page admin to get domain insights
