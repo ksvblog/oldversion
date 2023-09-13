@@ -55,6 +55,10 @@
   for = "/*"
   [headers.values]
     Content-Security-Policy = "frame-ancestors 'none'"
+    Cross-Origin-Opener-Policy = "same-origin-allow-popups; report-to='default'"
+    Cross-Origin-Embedder-Policy = "require-corp; report-to='default'"
+    Cross-Origin-Embedder-Policy-Report-Only = "require-corp; report-to='default"
+    Cross-Origin-Resource-Policy = "same-origin"
     Referrer-Policy = "no-referrer"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
