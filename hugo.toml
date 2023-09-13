@@ -15,8 +15,22 @@ enableRobotsTXT = true
 canonifyURLs = true
 
 # pygmentsCodefences = true
-# pygmentsUseClasses = true
-    
+# pygmentsUseClasses = true  
+[params]
+    mathJaxInitialize = "{ \"chtml\": { \"displayAlign\": \"left\" } }"
+    cyear = '© 2012'
+    copyrightYearToken = "<YYYY>"
+    [params.social]
+        github = "h2kyaw"
+        facebook = "CallMeHeinHtetKyaw"
+        facebook_admin = "100008954538831"  # This needs to be a page admin to get domain insights
+        twitter = "HeinHtetKyaw_"
+        twitter_domain = "h2kyaw.github.io" # This domain shows in twitter cards as "View on `twitter_domain`"
+        pinterest = "h2kyaw"
+        instagram = "__heinhtetkyaw__"
+        youtube = "@heinhtetkyaw279"
+        linkedin = "h2kyaw"
+
 [taxonomies]
     author = "authors"
     tag = "tags"
@@ -63,33 +77,6 @@ canonifyURLs = true
     nameLong = "Attribution-NonCommercial-NoDerivatives 4.0 International"
     copyrightFirstYear = 2012
 
-[params]
-    cyear = '© 2012'
-    copyrightYearToken = "<YYYY>"
-
-    # Social Icons
-    # [[params.social]]
-    # name = "github"
-    # url = "https://github.com/"
-
-    # [[params.social]]
-    # name = "twitter"
-    # url = "https://twitter.com/"
-
-    # [[params.social]]
-    # name = "linkedin"
-    # url = "https://www.linkedin.com/"
-    [params.social]
-        github = "h2kyaw"
-        facebook = "CallMeHeinHtetKyaw"
-        facebook_admin = "100008954538831"  # This needs to be a page admin to get domain insights
-        twitter = "HeinHtetKyaw_"
-        twitter_domain = "h2kyaw.github.io" # This domain shows in twitter cards as "View on `twitter_domain`"
-        pinterest = "h2kyaw"
-        instagram = "__heinhtetkyaw__"
-        youtube = "@heinhtetkyaw279"
-        linkedin = "h2kyaw"
-
 [outputs]
     home = ['html', 'rss', 'json']
     page = ['html']
@@ -111,7 +98,7 @@ canonifyURLs = true
   [markup.highlight]
     anchorLineNos = false
     codeFences = true
-    guessSyntax = false
+    guessSyntax = true
     hl_Lines = ''
     hl_inline = false
     lineAnchors = ''

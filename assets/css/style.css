@@ -578,10 +578,6 @@ video {
   pointer-events: none;
 }
 
-.collapse {
-  visibility: collapse;
-}
-
 .static {
   position: static;
 }
@@ -766,10 +762,6 @@ video {
 
 .h-1 {
   height: 0.25rem;
-}
-
-.h-1\.5 {
-  height: 0.375rem;
 }
 
 .h-3 {

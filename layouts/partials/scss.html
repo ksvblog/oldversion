@@ -1,0 +1,10 @@
+{{ $styles := resources.Get "css/tailwind.css" | minify }}
+{{ $styles = $styles | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+  {{- with $styles -}}
+    <style>{{- .Content | safeCSS -}}</style>
+  {{- end -}}
+{{ else }}
+  {{ $styles = $styles | minify | fingerprint | resources.ExecuteAsTemplate (printf "css/index.dev.%v.css" now.UnixMilli) . }}
+  <link href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" rel="stylesheet" />
+{{ end }} <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&amp;family=Fira+Sans:ital,wght@0,400;0,700;1,400&amp;family=Miriam+Libre:wght@400;700&amp;display=swap" rel="stylesheet" media="all" />

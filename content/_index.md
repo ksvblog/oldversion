@@ -8,8 +8,20 @@ summary: This page contains an archive of all posts.
 
 私のウェブサイトからようこそ。
 
-```katex
-$$
-\frac{1}{\Gamma(s)}\int_{0}^{\infty}\frac{u^{s-1}}{e^{u}-1}\mathrm{d}u
-$$
+```math
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 ```
+
+```math
+$$\ce{Hg^2+ ->[I-] HgI2 ->[I-] [Hg^{II}I4]^2-}$$
+```
+
+This shows as Mathjax \\(a \ne b\\), but this doesn't \(a \ne b\)
+
+Likewise, this shows as Mathjax
+
+\\[a \ne b\\]
+
+but this doesn't:
+
+\[a \ne b\]

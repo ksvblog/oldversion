@@ -1,23 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // purge: {
-  //   enabled: process.env.HUGO_ENVIRONMENT === 'production',
-  //   content: [
-  //     './layouts/**/*.html',
-  //     './content/**/*.md',
-  //     './content/**/*.html',
-  //   ],
-  // },
-  // purge: ['layouts/**/*.html', '../content/*.md',],
   content: ['content/*.md', 'content/**/*.md', 'layouts/**/*.html'],
-  // purge: {
-  //   enabled: process.env.HUGO_ENVIRONMENT === 'production',
-  //   content: [
-  //     './layouts/**/*.html',
-  //     './content/**/*.md',
-  //     './content/**/*.html',
-  //   ],
-  // },
   darkMode: 'class',
   theme: {
     extend: {
@@ -62,4 +45,5 @@ module.exports = {
       xl: '1440px',
     },
   },
+  plugins: [],
 };
