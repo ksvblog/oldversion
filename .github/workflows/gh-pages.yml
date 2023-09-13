@@ -33,3 +33,11 @@ jobs:
 
         env:
           AWS_EC2_METADATA_DISABLED: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 'latest'
+
+      - name: Install Node.js Dependencies
+        run: npm install
