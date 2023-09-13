@@ -1,4 +1,6 @@
 {
   "terminal.explorerKind": "integrated",
-  "terminal.sourceControlRepositoriesKind": "integrated"
+  "terminal.sourceControlRepositoriesKind": "integrated",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static"
 }

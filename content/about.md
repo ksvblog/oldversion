@@ -24,6 +24,6 @@ Hey there, I'm **Hein Htet Kyaw** - a passionate writer, content creator, and li
 
 {{< activities >}}
 
-# **Skills**
+# {{< svg icon="fa-light fa-mug-hot" class="inline-block mr-2 h-3" >}}**Skills**
 
 {{< skills >}}

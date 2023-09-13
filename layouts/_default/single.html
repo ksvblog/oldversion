@@ -4,7 +4,7 @@
       {{ $author := index .Site.Data.authors (.Params.author | default "default") }}
       <h1 class="font-sans text-3xl leading-tight font-bold text-gray-800">{{ .Title }}</h1>
       <p class="text-gray-500 mt-2">
-        <strong>Published: </strong> <time id="date">{{ .PublishDate.Format "January 2, 2006" }}</time> • <strong>Lastmod: </strong>{{ .Lastmod.Format "January 2, 2006" }}
+        <strong>Published: </strong> <time datetime="{{ .PublishDate.Format "2006-01-02 " }}">{{ .PublishDate.Format "January 2, 2006" }}</time> • <strong>Lastmod: </strong>{{ .Lastmod.Format "January 2, 2006" }}
         • <strong>Author:</strong> {{ $author.name }}
         • {{ .ReadingTime }} {{ if eq .ReadingTime 1 }}min{{ else }}mins{{ end }} read • {{ .WordCount }} Words
       </p>
