@@ -12,15 +12,15 @@ Hey there, I'm **Hein Htet Kyaw** - a passionate writer, content creator, and li
 
 {{< education >}}
 
-# **Qualifications**
+# {{< svg icon="fa-light fa-id-badge" class="inline-block mr-2 h-3" >}}**Qualifications**
 
 {{< qualifications >}}
 
-# **Employment History**
+# {{< svg icon="fa-light fa-list-timeline" class="inline-block mr-2 h-3" >}}**Employment History**
 
 {{< employment >}}
 
-# **Social Activities**
+# {{< svg icon="fa-light fa-chart-network" class="inline-block mr-2 h-3" >}}**Social Activities**
 
 {{< activities >}}
 
