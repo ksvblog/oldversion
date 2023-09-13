@@ -2,7 +2,7 @@
     <img src="https://h2kyaw.github.io/images/icon.svg" alt="K's V/Blog" title="K's V/Blog" align="right" height="60" />
 </a>
 
-# K's V/Blog
+# K's V/Blog [![Netlify Status](https://api.netlify.com/api/v1/badges/6f6399cd-4caa-4b10-854b-022dd4bcdf35/deploy-status)](https://app.netlify.com/sites/ksvblog/deploys)
 
 <p align="center">
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white">
