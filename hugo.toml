@@ -6,7 +6,6 @@ languageCode = 'my'
 paginate = 6
 summarylength = 10
 title = "K's V/Blog"
-# timeout = 20
 
 canonifyURLs = true
 disqusShortName = "heinhtetkyaw"
