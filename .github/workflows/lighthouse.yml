@@ -1,12 +1,16 @@
-name: Lighthouse
+name: Audit live site
 on: push
 
 jobs:
-  lighthouse:
+  audit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - name: Lighthouse
-        uses: foo-software/lighthouse-check-action@master
+      - name: Audit live URL
+        uses: jakejarvis/lighthouse-action@master
         with:
-          urls: 'https://ksvblog.site,https://h2kyaw.github.io,https://ksvblog.netlify.app'
+          url: 'https://ksvblog.site/'
+      - name: Upload results as an artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: report
+          path: './report'
