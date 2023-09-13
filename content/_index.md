@@ -1,10 +1,10 @@
 ---
 author: heinhtetkyaw
 title: 'Home'
-summary: This page contains an archive of all posts.
+summary: Explore wisdom, mindfulness, and personal growth with Hein Htet Kyaw. Your journey to a more meaningful life starts here.
 ---
 
-# Halo, Welcome to My v2 of //h2kyaw.github.io
+<!-- # Halo, Welcome to My v2 of //h2kyaw.github.io
 
 私のウェブサイトからようこそ。
 
@@ -24,4 +24,4 @@ Likewise, this shows as Mathjax
 
 but this doesn't:
 
-\[a \ne b\]
+\[a \ne b\] -->

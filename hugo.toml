@@ -1,89 +1,88 @@
 baseURL = "https://ksvblog.site/"
-title = "K's V/Blog"
-paginate = 6
-languageCode = 'my'
-summarylength = 10
 enableEmoji = true
-hasCJKLanguage = true 
-enableGitInfo = true
 enableInlineShortcodes = true
+hasCJKLanguage = true
+languageCode = 'my'
+paginate = 6
+summarylength = 10
+title = "K's V/Blog"
 # timeout = 20
 
-googleAnalytics = "UA-138756551-3"
+canonifyURLs = true
 disqusShortName = "heinhtetkyaw"
 enableRobotsTXT = true
-canonifyURLs = true
+googleAnalytics = "UA-138756551-3"
 
-# pygmentsCodefences = true
-# pygmentsUseClasses = true  
+pygmentsCodefences = true
+pygmentsUseClasses = true
 [params]
-    mathJaxInitialize = "{ \"chtml\": { \"displayAlign\": \"left\" } }"
-    cyear = '© 2012'
-    copyrightYearToken = "<YYYY>"
-    [params.social]
-        github = "h2kyaw"
-        facebook = "CallMeHeinHtetKyaw"
-        facebook_admin = "100008954538831"  # This needs to be a page admin to get domain insights
-        twitter = "HeinHtetKyaw_"
-        twitter_domain = "h2kyaw.github.io" # This domain shows in twitter cards as "View on `twitter_domain`"
-        pinterest = "h2kyaw"
-        instagram = "__heinhtetkyaw__"
-        youtube = "@heinhtetkyaw279"
-        linkedin = "h2kyaw"
+copyrightYearToken = "<YYYY>"
+cyear = '© 2012'
+mathJaxInitialize = "{ \"chtml\": { \"displayAlign\": \"left\" } }"
+[params.social]
+facebook = "CallMeHeinHtetKyaw" 
+facebook_admin = "100008954538831" # This needs to be a page admin to get domain insights
+github = "h2kyaw" 
+instagram = "__heinhtetkyaw__" 
+linkedin = "h2kyaw" 
+pinterest = "h2kyaw" 
+twitter = "HeinHtetKyaw_" 
+twitter_domain = "https://ksvblog.site" # This domain shows in twitter cards as "View on `twitter_domain`"
+youtube = "@heinhtetkyaw279" 
 
 [taxonomies]
-    author = "authors"
-    tag = "tags"
-    category = "categories"
-    series = "series"
+author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
 
 [menu]
-    [[menu.main]]
-        weight = 1
-        name = 'About'
-        pageRef = '/about'
-        Url = '/about'
-        Pre = 'fa-light fa-id-badge'
-    [[menu.main]]
-        weight = 2
-        name = 'Archive'
-        pageRef = '/archive'
-        Url = '/archive'
-        Pre = 'fa-light fa-cabinet-filing'
-    [[menu.main]]
-        weight = 3
-        name = 'Books'
-        pageRef = '/books'
-        Url = '/books'
-        Pre = 'fa-light fa-books'
-    [[menu.main]]
-        weight = 4
-        name = 'Posts'
-        pageRef = '/posts'
-        Url = '/posts'
-        Pre = 'fa-light fa-blog'
-    [[menu.main]]
-        weight = 5
-        name = 'Search'
-        pageRef = '/search'
-        Url = '/search'
-        Pre = 'fa-light fa-magnifying-glass'
+[[menu.main]]
+Pre = 'fa-light fa-id-badge'
+Url = '/about'
+name = 'About'
+pageRef = '/about'
+weight = 1
+[[menu.main]]
+Pre = 'fa-light fa-cabinet-filing'
+Url = '/archive'
+name = 'Archive'
+pageRef = '/archive'
+weight = 2
+[[menu.main]]
+Pre = 'fa-light fa-books'
+Url = '/books'
+name = 'Books'
+pageRef = '/books'
+weight = 3
+[[menu.main]]
+Pre = 'fa-light fa-blog'
+Url = '/posts'
+name = 'Posts'
+pageRef = '/posts'
+weight = 4
+[[menu.main]]
+Pre = 'fa-light fa-magnifying-glass'
+Url = '/search'
+name = 'Search'
+pageRef = '/search'
+weight = 5
 
 [permalinks]
-	posts = "/post/:filename/"
+posts = "/post/:filename/"
 
 [params.license]
-    name = "CC BY-NC-ND 4.0"
-    nameLong = "Attribution-NonCommercial-NoDerivatives 4.0 International"
-    copyrightFirstYear = 2012
+copyrightFirstYear = 2012
+name = "CC BY-NC-ND 4.0"
+nameLong = "Attribution-NonCommercial-NoDerivatives 4.0 International"
 
 [outputs]
-    home = ['html', 'rss', 'json']
-    page = ['html']
-    rss = ['rss']
-    section = ["HTML", "RSS"]
-    taxonomy = ['html', 'rss']
-    term = ['html', 'rss']
+home = ['html', 'rss', 'json']
+page = ['html']
+rss = ['rss']
+section = ["HTML", "RSS"]
+taxonomy = ['html', 'rss']
+term = ['html', 'rss']
 
 # [markup.highlight]
 #     codeFences = true
@@ -95,27 +94,27 @@ canonifyURLs = true
 #     noClasses = false
 
 [markup]
-  [markup.highlight]
-    anchorLineNos = false
-    codeFences = true
-    guessSyntax = true
-    hl_Lines = ''
-    hl_inline = false
-    lineAnchors = ''
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = true
-    noHl = false
-    style = 'average'
-    tabWidth = 4
+[markup.highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = true
+hl_Lines = ''
+hl_inline = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = true
+noClasses = true
+noHl = false
+style = 'average'
+tabWidth = 4
 
 [frontmatter]
-    date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
-    expiryDate = ['expirydate', 'unpublishdate']
-    lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
-    publishDate = ['publishdate', 'pubdate', 'published', 'date']
+date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
+expiryDate = ['expirydate', 'unpublishdate']
+lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+publishDate = ['publishdate', 'pubdate', 'published', 'date']
 
 [security]
-    [security.exec]
-        osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|NPM_)$']
+[security.exec]
+osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|NPM_)$']
