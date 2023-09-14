@@ -54,6 +54,14 @@
 ![Android](https://img.shields.io/badge/Android-mobile?style=flat-square&logo=android&logoColor=%23a4c639&color=white)
 ![iOS](https://img.shields.io/badge/iOs-mobile?style=flat-square&logo=apple&logoColor=%23666&color=white)
 
+## Recent Activity
+
+This is a list of my most recent activity on GitHub.
+
+<!--RECENT_ACTIVITY:start-->
+
+<!--RECENT_ACTIVITY:last_update-->
+
 ## Welcome to My Digital World
 
 Hello and welcome to my personal website! I'm thrilled to have you here and share a glimpse into my world. I believe that life is a journey of constant exploration and learning, and this website is a reflection of that philosophy.
