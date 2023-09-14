@@ -14,19 +14,17 @@
 [![Hugo Deploy](https://github.com/ksvblog/ksvblog.github.io/actions/workflows/hugo.yaml/badge.svg)](https://github.com/ksvblog/ksvblog.github.io/actions/workflows/hugo.yaml)
 [![GitHub Pages](https://github.com/ksvblog/ksvblog.github.io/actions/workflows/gh-pages.yml/badge.svg)](https://github.com/ksvblog/ksvblog.github.io/actions/workflows/gh-pages.yml)
 [![tfsec](https://github.com/ksvblog/ksvblog.github.io/actions/workflows/tfsec.yml/badge.svg)](https://github.com/ksvblog/ksvblog.github.io/actions/workflows/tfsec.yml)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=h2kyaw_h2kyaw.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=h2kyaw_h2kyaw.github.io)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=h2kyaw_h2kyaw.github.io&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=h2kyaw_h2kyaw.github.io)
-[![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://www.paypal.com/paypalme/h2kyaw)
-[![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ksvblog_ksvblog.github.io&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ksvblog_ksvblog.github.io)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ksvblog_ksvblog.github.io&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=ksvblog_ksvblog.github.io)
 [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B39619%2Fgithub.com%2Fksvblog%2Fksvblog.github.io.svg?type=small)](https://app.fossa.com/projects/custom%2B39619%2Fgithub.com%2Fksvblog%2Fksvblog.github.io?ref=badge_small)
 
 ## Website Stats
 ![GitHub](https://img.shields.io/github/license/h2kyaw/h2kyaw.github.io)
 ![Netlify](https://img.shields.io/netlify/6f6399cd-4caa-4b10-854b-022dd4bcdf35)
 [![Website](https://img.shields.io/website?up_message=online&up_color=blue&down_message=offline&down_color=lightgrey&url=https%3A%2F%2Fksvblog.site)](https://ksvblog.site)
-[![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m795281556-0b7e64e58ac98ee17078ff05)](https://stats.uptimerobot.com/k2VmpcYqwl)
-![GitHub deployments](https://img.shields.io/github/deployments/h2kyaw/h2kyaw.github.io/github-pages)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/h2kyaw/h2kyaw.github.io)
+[![Uptime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fh2kyaw%2Fstats%2Fmaster%2Fapi%2Fk-s-v-blog%2Fuptime.json)](https://stats.ksvblog.site)
+[![ResponseTime](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fh2kyaw%2Fstats%2Fmaster%2Fapi%2Fk-s-v-blog%2Fresponse-time.json)](https://stats.ksvblog.site)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ksvblog/ksvblog.github.io)
 [![Hits-of-Code](https://hitsofcode.com/github/h2kyaw/h2kyaw.github.io?branch=main)](https://hitsofcode.com/github/h2kyaw/h2kyaw.github.io/view?branch=main)
 ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fksvblog.site&cacheSeconds=3600&link=https%3A%2F%2Fksvblog.site)
 ![Chromium HSTS preload](https://img.shields.io/hsts/preload/ksvblog.site)
@@ -106,4 +104,4 @@ hugo server
 
 ### License
 
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fh2kyaw%2Fh2kyaw.github.io?ref=badge_large)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B39619%2Fgithub.com%2Fksvblog%2Fksvblog.github.io.svg?type=large&issueType=license)](https://app.fossa.com/projects/custom%2B39619%2Fgithub.com%2Fksvblog%2Fksvblog.github.io?ref=badge_large&issueType=license)
