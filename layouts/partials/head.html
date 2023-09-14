@@ -4,7 +4,7 @@
   <title>{{- if .IsHome -}}Home | {{ .Site.Title }}{{- else if .Params.hide_site_title -}}{{ .Page.Title }}{{- else if .Page.Title -}}{{ .Page.Title }} | {{ .Site.Title }}{{- else -}}{{ .Site.Title }}{{- end -}}</title>
   {{ partial "head/seo.html" . }}
   {{/* {{ partial "css.html" . }} */}}
-  {{ partialCached "scss.html" . }}
+  {{ partialCached "css.html" . }}
   {{/* <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" /> */}}
   <script>
     if (localStorage.getItem("color-theme") === "dark" || (!("color-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
