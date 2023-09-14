@@ -46,10 +46,5 @@
       ]
     }
   ],
-  "frontMatter.content.pageFolders": [
-    {
-      "title": "posts",
-      "path": "[[workspace]]/d:/websites/h2k/content"
-    }
-  ]
+  "frontMatter.content.pageFolders": []
 }

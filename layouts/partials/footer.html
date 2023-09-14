@@ -33,6 +33,8 @@
   </div>
 </footer>
 {{ $site := resources.Get "js/site.js" }}
-{{ $fa := resources.Get "fontawesome/js/all.js" }}
-{{ $secureJS := slice $site $fa | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
+{{ $brands := resources.Get "fontawesome/js/brands.js" }}
+{{ $light := resources.Get "fontawesome/js/light.js" }}
+{{ $fontawesome := resources.Get "fontawesome/js/fontawesome.js" }}
+{{ $secureJS := slice $site $brands $light $fontawesome | resources.Concat "bundle.js" | resources.Minify | resources.Fingerprint "sha512" }}
 <script src="{{ $secureJS.RelPermalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous"></script>

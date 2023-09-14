@@ -1,10 +1,9 @@
-{{ $styles := resources.Get "/css/style.css" | postCSS | minify }}
-{{ if .Site.IsServer }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
-{{ else }}
-  {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" />
+{{ $css := resources.Get "css/tailwind.css" }}
+{{ $css = $css | resources.PostCSS }}
+{{ if hugo.IsProduction }}
+  {{ $css = $css | resources.PostCSS | minify | fingerprint | resources.PostProcess }}
 {{ end }}
+<link href="{{ $css.RelPermalink }}" rel="stylesheet" />
 <link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css" type="text/css" media="all" />
 <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&amp;family=Fira+Sans:ital,wght@0,400;0,700;1,400&amp;family=Miriam+Libre:wght@400;700&amp;display=swap" rel="stylesheet" media="all" />
 {{/* {{ if .Site.IsServer }}
