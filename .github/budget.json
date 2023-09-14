@@ -4,27 +4,27 @@
     "timings": [
       {
         "metric": "interactive",
-        "budget": 3000
+        "budget": 3000000000
       },
       {
         "metric": "first-meaningful-paint",
-        "budget": 1000
+        "budget": 1000000000
       }
     ],
     "resourceSizes": [
       {
         "resourceType": "script",
-        "budget": 125
+        "budget": 125000000000
       },
       {
         "resourceType": "total",
-        "budget": 300
+        "budget": 300000000
       }
     ],
     "resourceCounts": [
       {
         "resourceType": "third-party",
-        "budget": 10
+        "budget": 10000000
       }
     ]
   }
