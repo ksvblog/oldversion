@@ -54,18 +54,6 @@
 ![Android](https://img.shields.io/badge/Android-mobile?style=flat-square&logo=android&logoColor=%23a4c639&color=white)
 ![iOS](https://img.shields.io/badge/iOs-mobile?style=flat-square&logo=apple&logoColor=%23666&color=white)
 
-## Recent Activity
-
-This is a list of my most recent activity on GitHub.
-
-<!--RECENT_ACTIVITY:start-->
-1. ⬆️ Pushed 1 commit(s) to [Readme-Workflows/recent-activity](https://github.com/Readme-Workflows/recent-activity)<br>
-2. ⬆️ Pushed 1 commit(s) to [Readme-Workflows/recent-activity](https://github.com/Readme-Workflows/recent-activity)<br>
-3. ⬆️ Pushed 1 commit(s) to [Readme-Workflows/recent-activity](https://github.com/Readme-Workflows/recent-activity)<br>
-4. ⬆️ Pushed 1 commit(s) to [Readme-Workflows/recent-activity](https://github.com/Readme-Workflows/recent-activity)<br>
-5. ⭐ Starred [Readme-Workflows/recent-activity](https://github.com/Readme-Workflows/recent-activity)<br>
-<!--RECENT_ACTIVITY:end-->
-
 ## Welcome to My Digital World
 
 Hello and welcome to my personal website! I'm thrilled to have you here and share a glimpse into my world. I believe that life is a journey of constant exploration and learning, and this website is a reflection of that philosophy.
