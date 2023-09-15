@@ -49,8 +49,8 @@ Cache-Control = "public, max-age=31536000"
 [[headers]]
 for = "/js/*"
 [headers.values]
-
 Cache-Control = "public, max-age=31536000"
+
 [[headers]]
 for = "/*"
 [headers.values]
@@ -66,7 +66,7 @@ X-Content-Type-Options = "nosniff"
 X-Frame-Options = "DENY"
 X-XSS-Protection = "1; mode=block"
 #  Multi-value headers are expressed with multi-line strings
-cache-control = '''
+Cache-control = '''
 	max-age=0,
 	no-cache,
 	no-store,
