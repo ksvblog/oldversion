@@ -1,7 +1,6 @@
-/* css/tailwind.css  */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -16,4 +15,8 @@
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+.icon {
+  height: 1em;
+  width: 1em;
 }
