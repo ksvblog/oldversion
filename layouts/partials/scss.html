@@ -1,5 +1,5 @@
 {{ $css := resources.Get "css/main.css" }}
 {{ $css = $css | resources.PostCSS }}
 {{ if hugo.IsProduction }}
-  {{ $css = $css | resources.PostCSS | resources.Minify | resources.Fingerprint "sha512" | resources.PostProcess }}
+  {{ $css = $css | minify | fingerprint | resources.PostProcess }}
 {{ end }} <link href="{{ $css.RelPermalink }}" rel="stylesheet" />
